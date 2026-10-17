@@ -10,7 +10,7 @@
 ### Building
 
 ```sh
-git clone https://github.com/ochitsudayo/yum.git
+git clone https://github.com/2besita/yum.git
 cd yum
 make
 ```
@@ -34,7 +34,7 @@ cp ./yum ~/.local/bin/yum
 #### Running automatically with nix
 
 ```sh
-nix run github:ochitsudayo/yum
+nix run github:2besita/yum
 ```
 
 #### Installing with flake
@@ -43,7 +43,7 @@ First, add this to your flake inputs:
 
 ```nix
 yum = {
-    url = "github:ochitsudayo/yum";
+    url = "github:2besita/yum";
     inputs.nixpkgs.follows = "nixpkgs";
 };
 ```
